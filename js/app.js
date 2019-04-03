@@ -8,9 +8,7 @@
 angular.module('app', ['ionic', 'app.controllers', 'app.routes', 'app.directives','app.services',])
 
 .config(function($ionicConfigProvider, $sceDelegateProvider){
-
   $sceDelegateProvider.resourceUrlWhitelist([ 'self','*://www.youtube.com/**', '*://player.vimeo.com/video/**']);
-
 })
 
 .run(function($ionicPlatform) {
@@ -71,12 +69,10 @@ angular.module('app', ['ionic', 'app.controllers', 'app.routes', 'app.directives
       });
       
       element.bind('click', function (event) {
-
         window.open(href, '_system', 'location=yes');
 
         event.preventDefault();
         event.stopPropagation();
-
       });
     }
   };

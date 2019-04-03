@@ -34,6 +34,15 @@ angular.module('app.routes', [])
     templateUrl: 'templates/menu.html',
     controller: 'menuCtrl'
   })
+  .state('menu.changeOwner', {
+    url: '/change',
+    views: {
+      'side-menu21': {
+        templateUrl: 'templates/changeOwner.html',
+        controller: 'changeOwnerCtrl'
+      }
+    }
+  })
 
 $urlRouterProvider.otherwise('/side-menu21/page1')
 

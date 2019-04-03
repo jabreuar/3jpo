@@ -1,16 +1,10 @@
-<ion-view title="Find my tag" id="page2" style="background-color:#007DB8;">
+<ion-view title="Change Owner" id="page3" style="background-color:#007DB8;">
   <ion-content padding="true" class="has-header">
     <div>
       <img src="img/PmMRdo4TRrfWnpaYVp1Q_Dell-Logo-3D-White-PNG.png"
         style="display: block; width: 100%; height: auto; margin-left: auto; margin-right: auto;">
     </div>
-    <form id="findMyTag-form4" class="list">
-      <label class="item item-input">
-        <i class="icon ion-search placeholder-icon"></i>
-        <input type="search" placeholder="your service tag">
-      </label>
-      <button ng-click="findMyTag()" class="button button-light button-block">Find my tag</button>
-      <div class="spacer" style="width: 300px; height: 32px;"></div>
+    <form id="changeOwner-form6" class="list">
       <label class="item item-input" id="findMyTag-input4">
         <span class="input-label">Customer Name</span>
         <input type="text" placeholder="" ng-model="name">
@@ -24,7 +18,6 @@
         <input type="text" placeholder="" ng-model="entitlement">
       </label>
     </form>
-    <a ui-sref="menu.changeOwner()" id="findMyTag-button8" class="button button-royal button-block">Change Owner</a>
-    <a href="tel:08009703355,1,6266122" id="btnMakeCall" class="button button-balanced button-block">Make a call</a>
+    <button id="changeOwner-button12" class="button button-royal button-block">Save</button>
   </ion-content>
 </ion-view>
